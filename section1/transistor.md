@@ -22,3 +22,13 @@
 
 - P-channel MOSFET  a negative voltage(low voltage in enhacement mode) is necessary  to activate MOSFET(electrons will flow drain to source)(Hole carriers)
 - N-channel MOSFET  a positive voltage(high voltage in enhacement mode) is necessary  to activate MOSFET(electrons will flow source to drain)(Electron carriers)
+#### Logic gates
+- is a device that performs a boolean function, a logical operation on one or more binary inputs
+- the basic building block
+- NOT
+- NAND
+- AND
+- NOR
+- OR
+- XNOR
+- NOR
