@@ -38,3 +38,7 @@
 - is an actual table that generates an output based on the inputs
 - customized truth table which is loaded with values that are relevant
 - in fpga LUT acts like a memory
+
+#### Integrated circuit(IC)
+- large number of miniaturized transistors integrated together in small area in silicon
+- high transistor density
