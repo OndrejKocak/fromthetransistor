@@ -25,6 +25,7 @@
 #### Logic gates
 - is a device that performs a boolean function, a logical operation on one or more binary inputs
 - the basic building block
+- are built from transistors
 - NOT
 - NAND
 - AND
@@ -32,3 +33,8 @@
 - OR
 - XNOR
 - NOR
+
+#### Lookup table(LUT)
+- is an actual table that generates an output based on the inputs
+- customized truth table which is loaded with values that are relevant
+- in fpga LUT acts like a memory
