@@ -42,3 +42,19 @@
 #### Integrated circuit(IC)
 - large number of miniaturized transistors integrated together in small area in silicon
 - high transistor density
+#### FPGA
+- type of IC
+- array of programmable logic blocks(CLB control logic block)
+- logic blocks and interconnects between gates can be programmed
+- the boolean function is saved in the LUT within the CLB
+- cannot set initial state, since all is based on voltages; so you always need to wait for signals to settle, which you need to account for in the design. 
+- coarse grained elements: dedicated memory (block RAM), embedded processors, flash memory, floating point units, multipliers etc. basically anything that's already pre-fabed
+
+#### CLB
+- contains flip-flops, LUTs and multiplexers
+- nterconnects can be routed to other CLBs, IO blocks or other coarse grained element
+- LUT stores the functions output
+- basically: LUT (has outputs) -> Multiplexer (inputs is LUT, single output, selectors are the inputs) -> DFF (to make the whole thing sequentially valid and have the reads driven by the CLK)
+    - the DFF here is optional and only needed if you need to make a sequential circuit.
+    - if a combinational is needed, then DFF is skipped
+    - a MUX is used to select between DFF and single LUT-MUX output
