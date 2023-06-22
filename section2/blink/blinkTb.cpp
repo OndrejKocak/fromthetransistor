@@ -2,7 +2,7 @@
 #include <verilated_vcd_c.h>
 #include "Vblink.h"
 
-#define MAX_SIM_TIME 20
+#define MAX_SIM_TIME 200000
 
 int main(int argc, char** argv, char**env){
     Verilated::commandArgs(argc, argv);
@@ -21,5 +21,6 @@ int main(int argc, char** argv, char**env){
         simTime++;
     }
     delete top;
+    m_trace->close();
     exit(EXIT_SUCCESS);
 }

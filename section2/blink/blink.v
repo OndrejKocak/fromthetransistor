@@ -4,8 +4,6 @@ module blink(output led, input clk );
     assign led = state;
     always @(posedge clk) begin
         counter <= counter + 1;
-        if(counter % 100000 <= 1) begin
-            state <= !state;
-        end
+        state <= counter[5];
     end
 endmodule
